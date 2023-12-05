@@ -32,24 +32,27 @@
         name er det input feltet hedder og det som kommer tilbage når den er udfyldt
       for og id kan kobles sammen ved at give dem samme navn (de bruges mest til en selv for styling purposes)
     autocomplete kan du bruge det som folk normalt bruger. du kan også sætte autocomplete off jeg  html attributer autocomplete for at se de forskellige muligheder -->
-        <div class="form-felt">
+        <div class="form-felt" name="contact" netlify>
           <div>
             <label>Navn
-              <input id="navn" type="text" name="name" netlify>
+              <input id="navn" type="text" name="name">
             </label>
           </div>
           <div>
             <label for="email">Email</label>
-            <input id="email" type="email" name="email" netlify>
+            <input id="email" type="email" name="email">
           </div>
           <div>
             <label for="telefon">Tlf.</label>
-            <input id="telefon" type="tel" name="telefon" netlify>
+            <input id="telefon" type="tel" name="telefon">
+          </div>
+          <div>
+            <button type="submit">Indsend</button>
           </div>
           <div class="form-felt">
             <label>
               Besked
-              <textarea placeholder="Skriv din besked her..." name="besked" rows="5" netlify></textarea>
+              <textarea placeholder="Skriv din besked her..." name="besked" rows="5"></textarea>
             </label>
           </div>
         </div>
