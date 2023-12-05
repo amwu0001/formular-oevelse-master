@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burger menu-øvelse</title>
+  <link rel="stylesheet" href="css/demo.css" />
+  <!-- Ret i nedenståendde stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="banner">
+    <div class="logo">
+      <a href="#0">Logo</a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <header>
+        <h2>Kontakt os</h2>
+        <p>
+          Udfyld kontaktformularen for at kontakte os. Vi glæder os til at
+          høre fra dig.
+        </p>
+      </header>
+
+      <form>
+        <!-- Formular-indhold
+        name er det input feltet hedder og det som kommer tilbage når den er udfyldt
+      for og id kan kobles sammen ved at give dem samme navn (de bruges mest til en selv for styling purposes)
+    autocomplete kan du bruge det som folk normalt bruger. du kan også sætte autocomplete off jeg  html attributer autocomplete for at se de forskellige muligheder -->
+        <div class="form-felt">
+          <div>
+            <label>Navn
+              <input id="navn" type="text" name="name" netlify>
+            </label>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" netlify>
+          </div>
+          <div>
+            <label for="telefon">Tlf.</label>
+            <input id="telefon" type="tel" name="telefon" netlify>
+          </div>
+          <div class="form-felt">
+            <label>
+              Besked
+              <textarea placeholder="Skriv din besked her..." name="besked" rows="5" netlify></textarea>
+            </label>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
